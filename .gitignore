@@ -1,0 +1,38 @@
+# ── Private planning & personal notes — local only, never commit ──
+_private/
+
+# ── Claude Code / IDEs ──
+.claude/
+.idea/
+.vscode/
+
+# ── OS junk ──
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# ── Python ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ── Ansys / CFD: ignore solver output, locks & temp (keep your MODELS, e.g. .aedt) ──
+*.lock
+*.aedt.lock
+*.aedtresults/
+*.aedt.batchinfo/
+*.pyaedt
+*.trn
+*.cas.h5
+*.dat.h5
+*.err
+*.mntr
+*_files/dp0/
+
+# Heavy result/mesh dumps — uncomment/extend as needed
+# results/
+# *.msh
