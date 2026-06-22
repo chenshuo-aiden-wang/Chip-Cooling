@@ -28,7 +28,8 @@ measured **thermal resistance (°C/W)** against CFD.
 ## 3. Derived targets (the hand calc — these are *computed*)
 
 > **Full hand-calc package** — channel sizing, feasibility check, and stated assumptions:
-> see [`HANDCALC.md`](HANDCALC.md). (Headline: the 0.11 °C/W target is *feasible but tight* —
+> see [`model/HANDCALC.md`](model/HANDCALC.md), or run `python model/run_handcalc.py` for
+> live numbers. (Headline: the 0.11 °C/W target is *feasible but tight* —
 > it needs aggressive microchannels; a naive design misses.)
 
 **Required total thermal resistance:**

@@ -1,6 +1,9 @@
 # Hand-Calc Package — GPU Cold-Plate Test Bench
 
-**Rev:** 0.1 · **Date:** 2026-06-21 · Supports [`SPEC.md`](SPEC.md)
+**Rev:** 0.1 · **Date:** 2026-06-21 · Supports [`../SPEC.md`](../SPEC.md)
+
+> **Now live code:** run `python run_handcalc.py` in this folder for up-to-date numbers.
+> This document is the *method + assumptions*; the script is the source of truth for values.
 
 First-principles feasibility analysis behind the spec targets. Everything here is a
 *hand estimate* to be refined by CFD (Icepak/Fluent) and measurement. Assumptions and
