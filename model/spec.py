@@ -13,6 +13,6 @@ DESIGN_FLOW_LPM = 1.5  # design flow rate        [L/min]
 # --- derived target ---
 R_TARGET = (T_J_MAX - T_IN) / Q     # [C/W]  -> 0.11
 
-# --- estimated stack resistances (refine with datasheet / CFD) ---
+# --- TIM estimate (refine with datasheet / CFD). Spreading is now computed by the
+#     Yovanovich model in coldplate.analyze, not assumed here. ---
 R_TIM = 0.025        # thermal interface material [C/W]
-R_SPREADING = 0.015  # spreading resistance       [C/W]

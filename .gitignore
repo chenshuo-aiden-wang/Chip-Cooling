@@ -2,6 +2,7 @@
 _private/
 
 # ── Claude Code / IDEs ──
+CLAUDE.md
 .claude/
 .idea/
 .vscode/

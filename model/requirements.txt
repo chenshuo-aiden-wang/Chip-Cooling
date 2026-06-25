@@ -2,4 +2,4 @@
 # These are for the next steps (plots, sweeps, accurate fluid properties):
 numpy
 matplotlib
-CoolProp        # optional: temperature-dependent fluid properties
+CoolProp        #  temperature-dependent fluid properties
