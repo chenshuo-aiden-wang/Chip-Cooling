@@ -1,0 +1,6 @@
+name,use,k_W_mK,density_kg_m3,cp_J_kgK,viscosity_Pa_s,beta_1_K,alpha_m2_s,molar_mass_g_mol,source
+Copper_AM,fin plate and baseplate,380,8960,385,,,,,k from guidance; density and cp standard copper
+Silicon,die,130,2330,712,,,,,die is TTC-1002 silicon chips; k standard silicon
+PG-25,coolant,0.48,1016,3970,2.1e-3,3.9e-4,1.19e-7,22.3,ASHRAE/Melinder at 30 C
+Silicone,gasket,0.2,1150,1100,,,,,standard silicone rubber assumed
+FR-4,substrate if modeled,0.3,1900,1150,,,,,standard FR-4 through plane

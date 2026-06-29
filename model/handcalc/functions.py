@@ -1,7 +1,7 @@
 """Cold plate hand calc functions.
 
-A first cut estimate of thermal resistance and pressure drop for a parallel microchannel or
-finned cold plate, used to sanity check the CFD. All inputs come from spec.py. SI units.
+Thermal resistance and pressure drop for a parallel microchannel or finned cold plate. All
+inputs come from spec.py. SI units.
 
 Chain:
   flow -> Reynolds -> Nusselt (developing laminar / turbulent) -> h
@@ -9,22 +9,19 @@ Chain:
   + TIM + spreading (Yovanovich) + caloric -> total resistance and chip temperature
   + friction -> pressure drop and pumping power
 
-Simplifications (a hand calc, not CFD):
-  - Uniform parallel channels. The real manifold flow distribution is ignored.
-  - Total power applied uniformly. The hotspot driven peak, the real R_th,max, is higher,
-    and that is what CFD resolves.
+Assumptions:
+  - Uniform parallel channels.
+  - Total power applied uniformly.
 """
 import math
 
 
 def figure_of_merit(R, dP, R_baseline, dP_baseline):
-    """Competition Figure of Merit versus the provided baseline fin plate.
+    """Figure of Merit.
 
         FoM = 0.7 (R_b - R) / R_b + 0.3 (dP_b - dP) / dP_b
 
-    R and dP here are the hand calc estimates; the scored FoM uses the CFD values, with
-    R based on the peak chip temperature (max(T_chip - T_inlet) / q), not the average.
-    R_baseline and dP_baseline come from simulating the baseline fin plate the same way.
+    R_baseline and dP_baseline are the baseline fin plate values.
     """
     return 0.7 * (R_baseline - R) / R_baseline + 0.3 * (dP_baseline - dP) / dP_baseline
 
